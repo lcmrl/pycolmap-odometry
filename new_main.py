@@ -70,7 +70,12 @@ def main():
 
     matches = {}
 
-    matcher = get_matcher("superpoint-lightglue", device="cuda")
+    #matcher = get_matcher("aliked-lightglue", device="cuda")
+    #matcher = get_matcher("tiny-roma", device="cuda")
+    #matcher = get_matcher("liftfeat", device="cuda")
+    matcher = get_matcher("xfeat-star", device="cuda")
+    #matcher = get_matcher("loftr", device="cuda")
+
     #matcher.skip_ransac = True  # Disable RANSAC in matcher, we'll handle it in VisualOdometry
     img_size = 512
 
